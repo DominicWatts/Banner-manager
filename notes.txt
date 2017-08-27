@@ -5,3 +5,5 @@ git push
 git update-index --add --chmod=+x tools/n98-magerun.phar
 git commit -m 'Make tools/n98-magerun.phar executable'
 git push
+
+modman clone git://github.com/EcomDev/EcomDev_PHPUnit.git 
