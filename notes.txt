@@ -1,3 +1,7 @@
 git update-index --add --chmod=+x install.sh
 git commit -m 'Make install.sh executable'
 git push
+
+git update-index --add --chmod=+x tools/n98-magerun.phar
+git commit -m 'Make tools/n98-magerun.phar executable'
+git push
