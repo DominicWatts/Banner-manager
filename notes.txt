@@ -1,0 +1,3 @@
+git update-index --add --chmod=+x install.sh
+git commit -m 'Make install.sh executable'
+git push
