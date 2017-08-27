@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento admin config
+ *
+ * @author Xigen
+ */
+-->
+<config>
+    <menu>
+        <cms>
+            <children>
+                <bannermanager translate="title" module="xigen_bannermanager">
+                    <title>Banner Manager</title>
+                    <sort_order>65</sort_order>
+                    <children>
+                        <slider translate="title" module="xigen_bannermanager">
+                            <title>Manage Groups</title>
+                            <action>adminhtml/bannermanager_slider</action>
+                            <sort_order>50</sort_order>
+                        </slider>
+                        <banner translate="title" module="xigen_bannermanager">
+                            <title>Manage Banners</title>
+                            <action>adminhtml/bannermanager_banner</action>
+                            <sort_order>60</sort_order>
+                        </banner>
+                        <settings translate="title" module="xigen_bannermanager">
+                            <title>Settings</title>
+                            <sort_order>1000</sort_order>
+                            <action>adminhtml/system_config/edit/section/xigen_bannermanager</action>
+                        </settings>
+                    </children>
+                </bannermanager>
+            </children>
+        </cms>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <cms>
+                        <children>
+                            <bannermanager translate="title" module="xigen_bannermanager">
+                                <title>Banner Manager</title>
+                                <sort_order>65</sort_order>
+                                <children>
+                                    <slider translate="title">
+                                        <title>Manage Slider</title>
+                                        <sort_order>0</sort_order>
+                                        <children>
+                                            <save translate="title">
+                                                <title>Save Slider</title>
+                                                <sort_order>0</sort_order>
+                                            </save>
+                                            <delete translate="title">
+                                                <title>Delete Slider</title>
+                                                <sort_order>10</sort_order>
+                                            </delete>
+                                        </children>
+                                    </slider>
+                                    <banner translate="title">
+                                        <title>Manage Banner</title>
+                                        <sort_order>0</sort_order>
+                                        <children>
+                                            <save translate="title">
+                                                <title>Save Banner</title>
+                                                <sort_order>0</sort_order>
+                                            </save>
+                                            <delete translate="title">
+                                                <title>Delete Banner</title>
+                                                <sort_order>10</sort_order>
+                                            </delete>
+                                        </children>
+                                    </banner>
+                                </children>
+                            </bannermanager>
+                        </children>
+                    </cms>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
