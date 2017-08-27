@@ -12,7 +12,7 @@ env:
 #    - SKIP_CLEANUP=1
   - MAGENTO_VERSION=magento-ce-1.9.0.1
   - MAGENTO_VERSION=magento-ce-1.8.0.0
-  script:
+script:
   - curl -sSL https://raw.githubusercontent.com/AOEpeople/MageTestStand/master/setup.sh | bash
 notifications:
   email:
