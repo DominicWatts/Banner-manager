@@ -7,3 +7,5 @@ git commit -m 'Make tools/n98-magerun.phar executable'
 git push
 
 modman clone git://github.com/EcomDev/EcomDev_PHPUnit.git 
+
+modman clone git@github.com:digitalpianism/testframework.git
